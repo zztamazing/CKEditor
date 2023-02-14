@@ -1,0 +1,17 @@
+<form class="form__field" method="POST" action="{% url 'edit-passage' %}" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.media }}
+    {{ form.content }}
+    <input class="btn btn--sub btn--lg  my-md" type="submit" value="Submit"/>
+</form>
+
+{##}
+{#    <div class='form-group'>#}
+{#        <label for='context'>内容</label>#}
+{#        <div>#}
+{#            {{ form.media }}#}
+{#            {{ form.content }}#}
+{#        </div>#}
+{#    </div>#}
+
+
